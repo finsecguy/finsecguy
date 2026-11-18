@@ -6,7 +6,6 @@
 
 <p align="center">
   <strong>Head of GRC &amp; Security Automation</strong> at V1olet Security<br>
-  Bratislava, Slovakia
 </p>
 
 <p align="center">
