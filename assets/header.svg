@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="280" viewBox="0 0 1200 280" role="img"
+     aria-label="HERMAN K. wordmark and HK shield monogram">
+  <title>HERMAN K.</title>
+  <desc>Original aurora wordmark with a faux 3D extrusion and an ASCII HK shield monogram. Not a portrait.</desc>
+
+  <defs>
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#F472B6">
+        <animate attributeName="stop-color" values="#F472B6;#A78BFA;#22D3EE;#F472B6" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#22D3EE;#F472B6;#A78BFA" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#F472B6;#A78BFA;#22D3EE" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <animate attributeName="x1" values="0%;30%;0%" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;130%;100%" dur="14s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="aurora-vert" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9A8D4"/>
+      <stop offset="40%" stop-color="#C4B5FD"/>
+      <stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+
+    <linearGradient id="shield-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="55%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F472B6">
+        <animate attributeName="stop-color" values="#F472B6;#22D3EE;#F472B6" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="orb-pink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+
+    <style type="text/css"><![CDATA[
+      .orb-a { animation: pulse 7s ease-in-out infinite; }
+      .orb-b { animation: pulse 9s ease-in-out infinite 1.4s; }
+      .orb-c { animation: pulse 8s ease-in-out infinite 2.2s; }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 0.9; }
+      }
+    ]]></style>
+
+    <g id="wordmark">
+      <path transform="translate(0.000 0.000) scale(0.118000 -0.118000)" d="M64.80029296875 750H297.5987548828125V0H64.80029296875ZM649.20068359375 750H881.9991455078125V0H649.20068359375ZM195.79937744140625 484.79925537109375H742.6002197265625V279.20062255859375H195.79937744140625Z"/>
+      <path transform="translate(113.162 0.000) scale(0.118000 -0.118000)" d="M719.7994384765625 457.1995849609375V292.8004150390625H162.99993896484375V457.1995849609375ZM321.99884033203125 375 274.5987548828125 84.79931640625 183.59918212890625 185.9989013671875H755.1993408203125V0H43.6002197265625L99.60028076171875 375L43.6002197265625 750H750.1993408203125V564.0010986328125H183.59918212890625L274.5987548828125 665.20068359375Z"/>
+      <path transform="translate(209.332 0.000) scale(0.118000 -0.118000)" d="M225.5992431640625 425.59979248046875H488.19989013671875Q531.8002319335938 425.59979248046875 556.3004455566406 445.99993896484375Q580.8006591796875 466.40008544921875 580.8006591796875 504.00030517578125Q580.8006591796875 541.800537109375 556.3004455566406 562.1006774902344Q531.8002319335938 582.4008178710938 488.19989013671875 582.4008178710938H192.99945068359375L297.5987548828125 690.0003051757812V0H64.80029296875V750H522.5995483398438Q610.3994140625 750 676.29931640625 719.1000366210938Q742.19921875 688.2000732421875 778.899169921875 633.3001403808594Q815.59912109375 578.4002075195312 815.59912109375 504.00030517578125Q815.59912109375 431.60040283203125 778.899169921875 376.30047607421875Q742.19921875 321.00054931640625 676.29931640625 290.5005798339844Q610.3994140625 260.0006103515625 522.5995483398438 260.0006103515625H225.5992431640625ZM325.5999755859375 351H584.598388671875L843.3989868164062 0H575.8006591796875Z"/>
+      <path transform="translate(312.582 0.000) scale(0.118000 -0.118000)" d="M1190.5985107421875 750V0H969.3999633789062V664.4006958007812L1015.1998901367188 659.2007446289062L743.7987060546875 0H511.60009765625L240.19891357421875 656.6007690429688L285.99884033203125 662.6007080078125V0H64.80029296875V750H424.39788818359375L670.7992553710938 122.5989990234375H586.3995361328125L831.0009155273438 750Z"/>
+      <path transform="translate(462.088 0.000) scale(0.118000 -0.118000)" d="M227.1993408203125 135.2005615234375V320.9993896484375H740.7994995117188V135.2005615234375ZM642.3983154296875 750 977.5986938476562 0H729.4003295898438L456.79949951171875 648.80078125H519.79931640625L247.198486328125 0H-0.9998779296875L334.20050048828125 750Z"/>
+      <path transform="translate(578.790 0.000) scale(0.118000 -0.118000)" d="M759.80029296875 166.398681640625 693.00048828125 151.59881591796875V750H918.5989990234375V0H626.6008911132812L223.79901123046875 597.6011962890625L290.3988037109375 612.4010620117188V0H64.80029296875V750H365.59832763671875Z"/>
+      <path transform="translate(696.200 0.000) scale(0.118000 -0.118000)" d=""/>
+      <path transform="translate(726.172 0.000) scale(0.118000 -0.118000)" d="M64.80029296875 0V750H295.998779296875V182.9989013671875L235.99908447265625 231.99853515625L634.8006591796875 750H879.3991088867188L275.598876953125 0ZM424.20025634765625 351.400390625 594.799072265625 488.7996826171875 889.59912109375 0H625.8008422851562Z"/>
+      <path transform="translate(831.664 0.000) scale(0.118000 -0.118000)" d="M156.99957275390625 -11.199951171875Q121.999755859375 -11.199951171875 93.09991455078125 5.39996337890625Q64.2000732421875 21.9998779296875 47.60015869140625 50.89971923828125Q31.000244140625 79.799560546875 31.000244140625 114.79937744140625Q31.000244140625 150.59918212890625 47.60015869140625 179.09902954101562Q64.2000732421875 207.598876953125 93.09991455078125 224.19879150390625Q121.999755859375 240.7987060546875 156.99957275390625 240.7987060546875Q192.79937744140625 240.7987060546875 221.29922485351562 224.19879150390625Q249.799072265625 207.598876953125 266.39898681640625 179.09902954101562Q282.9989013671875 150.59918212890625 282.9989013671875 114.79937744140625Q282.9989013671875 79.799560546875 266.39898681640625 50.89971923828125Q249.799072265625 21.9998779296875 221.29922485351562 5.39996337890625Q192.79937744140625 -11.199951171875 156.99957275390625 -11.199951171875Z"/>
+    </g>
+    <g id="shield">
+      <path transform="translate(0.000 0.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 0.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 0.000) scale(0.016000 -0.016000)" d="M300 -12Q244 -12 219.5 12.5Q195 37 195 71V106Q195 140 219.5 164.5Q244 189 300 189Q356 189 380.5 164.5Q405 140 405 106V71Q405 37 380.5 12.5Q356 -12 300 -12Z"/>
+      <path transform="translate(28.800 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(38.400 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(48.000 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(57.600 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(67.200 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(76.800 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(86.400 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(96.000 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(105.600 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(115.200 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(124.800 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(134.400 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(144.000 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(153.600 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(163.200 0.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(172.800 0.000) scale(0.016000 -0.016000)" d="M300 -12Q244 -12 219.5 12.5Q195 37 195 71V106Q195 140 219.5 164.5Q244 189 300 189Q356 189 380.5 164.5Q405 140 405 106V71Q405 37 380.5 12.5Q356 -12 300 -12Z"/>
+      <path transform="translate(182.400 0.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 0.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(0.000 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 19.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(28.800 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(38.400 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(48.000 19.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(57.600 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(67.200 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(76.800 19.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(86.400 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(96.000 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(105.600 19.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(115.200 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(124.800 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(134.400 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(144.000 19.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(153.600 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(163.200 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(172.800 19.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(182.400 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 19.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(0.000 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 38.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(28.800 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(38.400 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(48.000 38.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(57.600 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(67.200 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(76.800 38.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(86.400 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(96.000 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(105.600 38.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(115.200 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(124.800 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(134.400 38.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(144.000 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(153.600 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(163.200 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(172.800 38.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(182.400 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 38.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(0.000 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 57.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(28.800 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(38.400 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(48.000 57.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(57.600 57.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(67.200 57.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(76.800 57.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(86.400 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(96.000 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(105.600 57.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(115.200 57.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(124.800 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(134.400 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(144.000 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(153.600 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(163.200 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(172.800 57.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(182.400 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 57.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(0.000 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 76.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(28.800 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(38.400 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(48.000 76.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(57.600 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(67.200 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(76.800 76.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(86.400 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(96.000 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(105.600 76.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(115.200 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(124.800 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(134.400 76.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(144.000 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(153.600 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(163.200 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(172.800 76.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(182.400 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 76.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(0.000 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 95.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(28.800 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(38.400 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(48.000 95.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(57.600 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(67.200 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(76.800 95.000) scale(0.016000 -0.016000)" d="M388 292H212V0H61V698H212V415H388V698H539V0H388Z"/>
+      <path transform="translate(86.400 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(96.000 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(105.600 95.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(115.200 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(124.800 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(134.400 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(144.000 95.000) scale(0.016000 -0.016000)" d="M280 291 218 204V0H68V698H218V406H226L302 522L425 698H593L384 403L603 0H434Z"/>
+      <path transform="translate(153.600 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(163.200 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(172.800 95.000) scale(0.016000 -0.016000)" d="M237 -138V760H363V-138Z"/>
+      <path transform="translate(182.400 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 95.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(0.000 114.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(9.600 114.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(19.200 114.000) scale(0.016000 -0.016000)" d="M234 414V740H366V414Z"/>
+      <path transform="translate(28.800 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(38.400 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(48.000 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(57.600 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(67.200 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(76.800 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(86.400 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(96.000 114.000) scale(0.016000 -0.016000)" d="M194 0 9 698H176L258 343L299 142H307L349 343L432 698H591L406 0Z"/>
+      <path transform="translate(105.600 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(115.200 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(124.800 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(134.400 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(144.000 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(153.600 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(163.200 114.000) scale(0.016000 -0.016000)" d="M62 361V479H538V361ZM62 131V249H538V131Z"/>
+      <path transform="translate(172.800 114.000) scale(0.016000 -0.016000)" d="M234 414V740H366V414Z"/>
+      <path transform="translate(182.400 114.000) scale(0.016000 -0.016000)" d=""/>
+      <path transform="translate(192.000 114.000) scale(0.016000 -0.016000)" d=""/>
+    </g>
+  </defs>
+
+  <!-- Soft aurora field -->
+    <ellipse class="orb-a" cx="260" cy="170" rx="280" ry="140" fill="url(#orb-pink)"/>
+  <ellipse class="orb-b" cx="620" cy="210" rx="260" ry="130" fill="url(#orb-violet)"/>
+  <ellipse class="orb-c" cx="980" cy="150" rx="220" ry="140" fill="url(#orb-cyan)"/>
+
+  <!-- 3D wordmark -->
+  <g transform="translate(36 176)" filter="url(#glow)">
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(16 16)" fill="#402380" fill-opacity="0.55"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(15 15)" fill="#422181" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(14 14)" fill="#432083" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(13 13)" fill="#451e85" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(12 12)" fill="#471d87" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(11 11)" fill="#481c88" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(10 10)" fill="#4a1a8b" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(9 9)" fill="#4c1b8e" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(8 8)" fill="#4d1c93" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(7 7)" fill="#4f1c97" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(6 6)" fill="#511d9b" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(5 5)" fill="#521da0" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(4 4)" fill="#541ea4" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(3 3)" fill="#561fa8" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(2 2)" fill="#571fad" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" transform="translate(1 1)" fill="#5920b1" fill-opacity="0.95"/>
+    <use href="#wordmark" xlink:href="#wordmark" fill="url(#aurora)"/>
+  </g>
+
+  <!-- ASCII HK shield monogram -->
+  <g transform="translate(950.13 88.50)">
+    <use href="#shield" xlink:href="#shield" transform="translate(2.2 2.2)" fill="#1e1b4b" fill-opacity="0.85"/>
+    <use href="#shield" xlink:href="#shield" fill="url(#shield-fill)"/>
+  </g>
+</svg>

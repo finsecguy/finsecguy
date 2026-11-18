@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="36" viewBox="0 0 1200 36" role="img" aria-label="aurora divider">
+  <title>aurora divider</title>
+  <defs>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#22D3EE" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="1"/>
+      <stop offset="82%" stop-color="#F472B6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+      <animate attributeName="x1" values="-20%;0%;-20%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="80%;100%;80%" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E2E8F0" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#A78BFA" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dg" x="-50%" y="-80%" width="200%" height="260%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="36" fill="none"/>
+  <line x1="40" y1="18" x2="1160" y2="18" stroke="url(#line)" stroke-width="2"/>
+  <line x1="40" y1="18" x2="1160" y2="18" stroke="url(#line)" stroke-width="6" opacity="0.28" filter="url(#dg)"/>
+  <g transform="translate(600 18)">
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#0B0C14" stroke="#E2E8F0" stroke-width="1.2"/>
+    <circle r="10" fill="url(#spark)" opacity="0.7">
+      <animate attributeName="opacity" values="0.35;0.9;0.35" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <polygon points="0,-5 5,0 0,5 -5,0" fill="#F472B6" opacity="0.95"/>
+  </g>
+</svg>
