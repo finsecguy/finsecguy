@@ -22,4 +22,6 @@ Head of GRC at V1olet Security. I automate compliance (NIS2, DORA, ISO 27001) an
 
 - [nis2check](https://github.com/finsecguy/nis2check): Python Flask NIS2 gap assessment
 - [SigmaFin](https://github.com/finsecguy/SigmaFin): Sigma rules for payment fraud, BEC and ERP abuse
-- Contributing to [CISO Assistant](https://github.com/intuitem/ciso-assistant-community/pull/5338)
+- [Bouncer](https://github.com/finsecguy/Bouncer): Evidence-gated validation for authorized bug bounty work
+- [ledgerhound](https://github.com/finsecguy/ledgerhound): Crypto-scam campaign intelligence pipeline
+- Contributor to [CISO Assistant](https://github.com/intuitem/ciso-assistant-community): merged [PR #5338](https://github.com/intuitem/ciso-assistant-community/pull/5338), [PR #5340](https://github.com/intuitem/ciso-assistant-community/pull/5340) in review
